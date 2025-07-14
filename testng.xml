@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="WebAutomationSuite" parallel="tests" thread-count = "2">
+    <test name="RegressionTestsChrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.web.framework.tests.LoginTest" />
+        </classes>
+    </test>
+    <test name="RegressionTestsfirefox">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="com.web.framework.tests.LoginTest" />
+        </classes>
+    </test>
+</suite>
