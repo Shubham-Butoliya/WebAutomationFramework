@@ -3,6 +3,7 @@
 This is a modular and extensible test automation framework for Web applications using **TestNG**, and **Page Object Model (POM)** design. It includes support for **Extent Reports**, **screenshot capture**, **retry logic**, and more.
 
 ---
+## ⭐ Star this repo if you find it useful!
 
 ## 🚀 Features
 
@@ -29,6 +30,7 @@ This is a modular and extensible test automation framework for Web applications 
 - **src/test/java**
   - com.web.framework.listeners &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# TestNG Listeners (Extent, Retry, Skip, etc.)
   - com.web.framework.test &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# test case
+  - com.mobile.framework.testUtils &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# assertion utility
 
 - **src/test/resources**
   - testdata &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;# can keep data required for testing (excel, json)
