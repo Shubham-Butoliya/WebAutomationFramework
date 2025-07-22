@@ -3,7 +3,7 @@ package com.web.framework.tests;
 import com.web.framework.base.BaseTest;
 import com.web.framework.listeners.RetryAnalyzer;
 import com.web.framework.pages.LoginPage;
-import org.testng.Assert;
+import com.web.framework.testUtils.AssertUtils;
 import org.testng.annotations.Test;
 
 public class LoginTest extends BaseTest {
@@ -13,7 +13,7 @@ public class LoginTest extends BaseTest {
         String expectedTitle = "Swag Labs";
         LoginPage loginPage = new LoginPage(driver);
         String actualTitle = loginPage.getPageTitle();
-        Assert.assertEquals(actualTitle, expectedTitle, "Page title mismatch");
+        AssertUtils.assertEquals(actualTitle, expectedTitle, "Page title mismatch");
     }
 
     @Test(retryAnalyzer = RetryAnalyzer.class)
@@ -23,7 +23,7 @@ public class LoginTest extends BaseTest {
         loginPage.loginAs("testuser", "testpass");
 
         String expectedTitle = "Swag Labs1"; // Post-login title
-        Assert.assertEquals(driver.getTitle(), expectedTitle, "Login failed or wrong redirect");
+        AssertUtils.assertEquals(driver.getTitle(), expectedTitle, "Login failed or wrong redirect");
     }
 
     @Test(dataProvider = "loginData")
